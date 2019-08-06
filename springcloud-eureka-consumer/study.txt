@@ -1,0 +1,11 @@
+1.Spring Cloud feign使用
+https://blog.csdn.net/u012734441/article/details/77662617
+
+2.异常：Load balancer does not have available server for client
+eureka服务器的客户端(服务消费端)如果在fetchRegistry设置为false的情况下,Feigh一端启动的时候 会报错
+
+
+
+测试：
+http://localhost:8763/printUser
+http://localhost:8763/addUser

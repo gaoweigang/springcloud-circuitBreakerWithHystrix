@@ -1,0 +1,44 @@
+server:
+  port: 8762
+  #访问根路径
+  context-path: /
+
+spring:
+  application:
+    #应用程序名称，注意与访问路径无关，通过spring.application.name属性，我们可以指定微服务的名称后续在调用的时候只需要该名字就可以进行服务的访问
+    name: product
+
+eureka:
+  instance:
+    #主机名称,这里使用localhost，主要名要与IP有映射关系
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+  client:
+    #服务提供方 将服务注册到注册中心
+    registerWithEureka: true
+    #服务提供方不需要从注册中心拉去服务
+    fetchRegistry: false
+    #服务注册中心地址 指定服务注册中心的位置。
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+    #启动健康检查
+    healthcheck:
+        enable: true
+
+##开启hystrix，hystrix里面的功能有限流，降级，熔断
+feign:
+  #开启feign使用hystrix,Spring Cloud默认已经为Feign整合了Hystrix，我们只需要开启
+  hystrix:
+    enabled: true
+
+#断路器默认设置
+hystrix:
+    #10s内请求失败数量达到20个，断路器开。
+    command.default.circuitBreaker.requestVolumeThreshold: 5
+    #短路多久以后开始尝试是否恢复，默认5s
+    command.default.circuitBreaker.sleepWindowInMilliseconds: 60000
+    #出错百分比阈值，当达到此阈值后，开始短路。默认50%
+    command.default.circuitBreaker.errorThresholdPercentage: 50
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-circuitBreakerWithHystrix.iml" filepath="$PROJECT_DIR$/springcloud-circuitBreakerWithHystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-consumer/springcloud-eureka-consumer.iml" filepath="$PROJECT_DIR$/springcloud-eureka-consumer/springcloud-eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-provider/springcloud-eureka-provider.iml" filepath="$PROJECT_DIR$/springcloud-eureka-provider/springcloud-eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-provider-stub/springcloud-eureka-provider-stub.iml" filepath="$PROJECT_DIR$/springcloud-eureka-provider-stub/springcloud-eureka-provider-stub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-register/springcloud-eureka-register.iml" filepath="$PROJECT_DIR$/springcloud-eureka-register/springcloud-eureka-register.iml" />
+    </modules>
+  </component>
+</project>

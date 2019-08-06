@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-eureka-consumer" />
+        <module name="springcloud-eureka-provider" />
+        <module name="springcloud-eureka-provider-stub" />
+        <module name="springcloud-eureka-register" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-circuitBreakerWithHystrix" target="1.8" />
+      <module name="springcloud-circuitBreakerWithHystrix-zuul-gateway" target="1.8" />
+      <module name="springcloud-eureka-consumer" target="1.5" />
+      <module name="springcloud-eureka-provider" target="1.5" />
+      <module name="springcloud-eureka-provider-stub" target="1.5" />
+      <module name="springcloud-eureka-register" target="1.5" />
+      <module name="springcloud-eureka-zuul-gateway" target="1.5" />
+      <module name="springcloud-zuul-gateway" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

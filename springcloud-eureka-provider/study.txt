@@ -1,0 +1,6 @@
+Spring Cloud 声明式服务调用 Feign :
+https://www.cnblogs.com/liferecord/p/6891188.html
+
+测试
+GET请求：  http://localhost:8762/user/gaoweigang/11
+POST请求： http://localhost:8762/add

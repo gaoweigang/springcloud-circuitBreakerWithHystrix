@@ -1,0 +1,23 @@
+pinpoint
+arms 监控
+ELK读指定目录下的文件
+内网 aop.tudou.com,  slb: ip地址, ecs: 服务器ip地址
+
+限流：使用hystrix限流，使用guava限流
+SpringBoot基于RateLimiter+AOP动态的为不同接口限流
+https://blog.csdn.net/qq_39816039/article/details/83988517
+
+@slf4j日志配置
+log4j2日志配置
+
+G1有没有FGC
+
+springboot健康检查
+
+SpringCloud的限流、降级和熔断——Hystrix
+https://blog.csdn.net/varyall/article/details/81546233
+
+zuul网关的坑
+
+idea cannot download sources解决办法
+https://www.cnblogs.com/wwjj4811/p/10364580.html
